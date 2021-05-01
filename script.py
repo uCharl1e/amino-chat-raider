@@ -1,9 +1,6 @@
 import amino
 
-print("╔════════════════════════════════════════╗")
-print("      Amino Chat Raider by uCharl1e")
-print("╚════════════════════════════════════════╝")
-
+print("╔════════════════════════════════════════╗" "\n      Amino Chat Raider by uCharl1e" "\n╚════════════════════════════════════════╝")
 print("\n-- login --")
 email= input("Enter your email address >> ")
 password= input("Enter your password >> ")
@@ -30,4 +27,4 @@ print("\nAnd so... the chaos begins...")
 mssg=input("\nInput Message >> ")
 while True:
     subclient.send_message(chatId=Chat,message=mssg)
-    print("you sent: ",mssg)
+    print("you sent:",mssg)
