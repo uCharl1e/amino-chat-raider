@@ -12,14 +12,14 @@ comlist= client.sub_clients(size=100)
 for name, id in zip(comlist.name,comlist.comId):
    print("Comm name: ",name,"\nComm Id:",id,"\n-----------")
 ID= input("Please enter Community ID >> ")
-print("-- choose A chat --" "\n")
+print("\n" "-- choose A chat --" "\n" "\n************")
 subclient = amino.SubClient(comId=ID, profile=client.profile)
-print("< your chats >" "\n")
+print("\n" "-- your chats --" "\n")
 chats = subclient.get_chat_threads(size=1000)
 for name, id in zip(chats.title, chats.chatId):
     print(name,":", id, "\n")
-print("-----------" "\n-----------" "\n")
-print("< public chats >")
+print("************" "\n")
+print("-- public chats --" "\n")
 chats2 = subclient.get_public_chat_threads(size=1000)
 for name, id in zip(chats2.title, chats2.chatId):
     print(name,":", id, "\n")
