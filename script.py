@@ -1,6 +1,6 @@
 import amino
 
-print("╔════════════════════════════════════════╗" "\n      Amino Chat Raider by uCharl1e" "\n╚════════════════════════════════════════╝")
+print("╔════════════════════════════════════════╗\n      Amino Chat Raider by uCharl1e\n╚════════════════════════════════════════╝")
 print("\n-- login --")
 email= input("Enter your email address >> ")
 password= input("Enter your password >> ")
